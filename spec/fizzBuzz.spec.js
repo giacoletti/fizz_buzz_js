@@ -1,7 +1,9 @@
-const subject = new FizzBuzz
+const FizzBuzz = require('../src/fizzBuzz.js')
+
+const subject = new FizzBuzz();
 
 describe('FizzBuzz', () => {
-    it('is expected to return a number if none of the game rules apply', () => {
+    it.only('is expected to return a number if none of the game rules apply', () => {
         expect(subject.check(1)).toEqual(1)
     });
 
